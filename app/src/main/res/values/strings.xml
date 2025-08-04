@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ČD AutoLogin</string>
+    <string name="status_ready">Připraveno</string>
+    <string name="btn_login_text">Přihlásit k ČD WiFi</string>
+    <string name="eula_information">Připojením k ČD Wi-Fi vyjadřujete souhlas s podmínkami používání této sítě vyhlášenými společností České dráhy. Seznámit se s nimi, případně svůj souhlas odvolat, můžete na původním captive portálu.</string>
+    <string name="status_success">Úspěšně přihlášen.</string>
+    <string name="status_logging_in">Přihlašování...</string>
+    <string name="status_detecting">Zjišťování sítě...</string>
+    <string name="status_connecting">Připojování...</string>
+    <string name="error_not_captive">Přihlášení není vyžadováno.</string>
+    <string name="error_detection">Chyba při detekci přihlašovací stránky.</string>
+    <string name="error_login">Přihlášení selhalo :(</string>
+    <string name="error_not_cd_wifi">Nekompatibilní síť.</string>
+    <string name="error_unknown">Neznámá chyba.</string>
+    <string name="notification_login_title">Přihlášení k ČDWiFi</string>
+    <string name="notification_login_success">Přihlášení proběhlo úspěšně.</string>
+    <string name="notification_login_failed">Přihlášení selhalo</string>
+    <string name="hibernation_exemption_button">Udělit výjimku</string>
+    <string name="hibernation_exemption_cancel">Později</string>
+    <string name="hibernation_exemption_dont_show_again">Znovu nezobrazovat</string>
+    <string name="hibernation_exemption_title">Výjimka z pozastavení</string>
+    <string name="hibernation_exemption_message">Váš operační systém ve výchozím nastavení pozastavuje aplikace, které nějakou dobu nepoužíváte. Chcete-li, aby ČDAutoLogin fungovala, aniž byste ji museli čas od času otevřít ručně, je doporučeno ji z tohoto chování vyloučit.</string>
+    <string name="foreground_service_notification_title">Přihlašování k ČD WiFi…</string>
+    <string name="foreground_service_notification_channel_name">Služba připojení k Wi-Fi</string>
+</resources>

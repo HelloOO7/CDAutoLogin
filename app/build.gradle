@@ -1,0 +1,62 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+allprojects {
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile) {
+            options.compilerArgs << "-Xlint:deprecation"
+        }
+    }
+}
+
+android {
+    namespace "cz.mamstylcendy.cdautologin"
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "cz.mamstylcendy.cdautologin"
+        minSdk 23
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+
+        coreLibraryDesugaringEnabled true
+    }
+}
+
+dependencies {
+    implementation libs.appcompat
+    implementation libs.constraintlayout
+    implementation libs.okhttp
+    implementation libs.okhttp.logging
+    implementation libs.dnsjava
+    implementation libs.jsoup
+    implementation libs.work
+    implementation(platform(libs.kotlin.bom))
+
+    coreLibraryDesugaring libs.desugaring
+
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+}
