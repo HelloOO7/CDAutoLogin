@@ -1,5 +1,7 @@
 package cz.mamstylcendy.cdautologin;
 
+import androidx.activity.EdgeToEdge;
+import androidx.activity.SystemBarStyle;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.StringRes;
@@ -14,6 +16,7 @@ import androidx.work.WorkInfo;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -42,6 +45,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        EdgeToEdgeSupport.registerCompatInsetsFixups(this);
+        EdgeToEdgeSupport.applyCompatStatusBarColor(this);
+        EdgeToEdge.enable(this, SystemBarStyle.dark(Color.TRANSPARENT));
+
         mPreferences = getSharedPreferences(getPackageName(), MODE_PRIVATE);
 
         setContentView(R.layout.activity_main);

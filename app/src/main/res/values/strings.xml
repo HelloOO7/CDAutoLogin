@@ -4,9 +4,9 @@
     <string name="btn_login_text">Přihlásit k ČD WiFi</string>
     <string name="eula_information">Připojením k ČD Wi-Fi vyjadřujete souhlas s podmínkami používání této sítě vyhlášenými společností České dráhy. Seznámit se s nimi, případně svůj souhlas odvolat, můžete na původním captive portálu.</string>
     <string name="status_success">Úspěšně přihlášen.</string>
-    <string name="status_logging_in">Přihlašování...</string>
-    <string name="status_detecting">Zjišťování sítě...</string>
-    <string name="status_connecting">Připojování...</string>
+    <string name="status_logging_in">Přihlašování…</string>
+    <string name="status_detecting">Zjišťování sítě…</string>
+    <string name="status_connecting">Připojování…</string>
     <string name="error_not_captive">Přihlášení není vyžadováno.</string>
     <string name="error_detection">Chyba při detekci přihlašovací stránky.</string>
     <string name="error_login">Přihlášení selhalo :(</string>
